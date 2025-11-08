@@ -1,6 +1,6 @@
 {
   "name": "km-test-template",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "license": "MIT",
   "description": "My package",
   "main": "build/js/index.js",
@@ -43,30 +43,29 @@
     "typeScript",
     "km-packages"
   ],
- "exports": {
-  ".": {
-    "bun": "./src/index.ts",
-    "node": "./build/js/index.js",
-    "types": "./build/types/index.d.ts",
-    "require": "./build/cjs/index.cjs",
-    "import": "./build/esm/index.mjs",
-    "default": "./build/js/index.js"
+  "exports": {
+    ".": {
+      "bun": "./src/index.ts",
+      "node": "./build/js/index.js",
+      "types": "./build/types/index.d.ts",
+      "require": "./build/cjs/index.cjs",
+      "import": "./build/esm/index.mjs",
+      "default": "./build/js/index.js"
+    },
+    "./esm": {
+      "types": "./build/esm/index.d.mts",
+      "import": "./build/esm/index.mjs"
+    },
+    "./js": {
+      "types": "./build/js/index.d.mts",
+      "default": "./build/js/index.js"
+    },
+    "./cjs": {
+      "types": "./build/cjs/index.d.ts",
+      "require": "./build/cjs/index.cjs"
+    },
+    "./assets/*": "./src/assets/*"
   },
-  "./esm": {
-    "types": "./build/esm/index.d.mts",
-    "import": "./build/esm/index.mjs"
-  },
-  "./js": {
-    "types": "./build/js/index.d.mts",
-    "default": "./build/js/index.js"
-  },
-  "./cjs": {
-    "types": "./build/cjs/index.d.ts",
-    "require": "./build/cjs/index.cjs"
-  },
-  "./assets/*": "./src/assets/*"
-}
-,
   "dependencies": {
     "tsup": "^8.5.0"
   }
