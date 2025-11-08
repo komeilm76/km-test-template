@@ -1,0 +1,2 @@
+var o=()=>"method working good. :)",t={nestedTestMethod:o};var e={example:t};var n=()=>"method working without problem",r=e,i=r;export{i as default,n as directlyTestMethod};
+//# sourceMappingURL=index.mjs.map
