@@ -15,7 +15,8 @@
     "url": "https://github.com/komeilm76/km-test-template.git"
   },
   "scripts": {
-    "fix:prettier": "prettier \"src/**/*.ts\" --write",
+    "fix:prettier": "prettier \"src/**/*.{ts,json}\" --write && prettier \"*.json\" --write",
+    "fix": "bun run fix:prettier",
     "dev": "bun --watch run ./src/index.ts",
     "build:types": "tsc",
     "build:tsup": "bun run build:types && tsup",
@@ -40,6 +41,10 @@
     "LICENSE"
   ],
   "keywords": [
+    "tsup",
+    "bun",
+    "release",
+    "publish",
     "typeScript",
     "km-packages"
   ],

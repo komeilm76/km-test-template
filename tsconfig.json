@@ -30,7 +30,7 @@
     "noUnusedParameters": false, // *
     "noImplicitReturns": true /* Report error when not all code paths in function return a value. */, // *
     "noFallthroughCasesInSwitch": true, // *
-    "noPropertyAccessFromIndexSignature": false, // *
+    "noPropertyAccessFromIndexSignature": false // *
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules/**", "build"]
