@@ -1,5 +1,5 @@
 # ============================================================
-# 🌿 km-test-template — .gitignore
+# 🌿 .gitignore
 # ============================================================
 # This file is tailored for a TypeScript + Bun + tsup + release-it package.
 # It ensures only source and essential configuration files are tracked.
